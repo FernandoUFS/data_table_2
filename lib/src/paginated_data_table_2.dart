@@ -834,6 +834,7 @@ class PaginatedDataTable2State extends State<PaginatedDataTable2> {
 
         Widget t = Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
+          mainAxisSize: MainAxisSize.min,
           children: <Widget>[
             if (isHeaderPresent) _getHeader(),
             _getTable(constraints),
